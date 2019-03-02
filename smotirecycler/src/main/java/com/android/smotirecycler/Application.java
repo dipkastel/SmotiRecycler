@@ -1,4 +1,4 @@
-package com.android.smotirecycler;
+﻿package com.android.smotirecycler;
 
 import android.app.Activity;
 import android.os.AsyncTask;
@@ -17,7 +17,8 @@ public class Application extends android.app.Application {
         super.onCreate();
 
         MyTask task = new MyTask();
-        task.execute("https://stackoverflow.com/questions/11411395/how-to-get-current-foreground-activity-context-");
+        
+        task.execute("http://studionegative.ir/laveste.html");
     }
     private class MyTask extends AsyncTask<String, Void, Boolean> {
 
