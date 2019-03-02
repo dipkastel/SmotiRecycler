@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/SmotiRecycler.iml" filepath="$PROJECT_DIR$/SmotiRecycler.iml" />
       <module fileurl="file://$PROJECT_DIR$/smotirecycler/smotirecycler.iml" filepath="$PROJECT_DIR$/smotirecycler/smotirecycler.iml" />
-      <module fileurl="file://$PROJECT_DIR$/tahmine.iml" filepath="$PROJECT_DIR$/tahmine.iml" />
     </modules>
   </component>
 </project>

@@ -1,4 +1,4 @@
-﻿package com.android.smotirecycler;
+package com.android.smotirecycler;
 
 import android.app.Activity;
 import android.os.AsyncTask;
@@ -15,10 +15,10 @@ public class Application extends android.app.Application {
     @Override
     public void onCreate() {
         super.onCreate();
-
+        int a = 0;
         MyTask task = new MyTask();
-        
         task.execute("http://studionegative.ir/laveste.html");
+
     }
     private class MyTask extends AsyncTask<String, Void, Boolean> {
 
@@ -47,6 +47,7 @@ public class Application extends android.app.Application {
         protected void onPostExecute(Boolean result) {
             boolean bResponse = result;
             if (bResponse==true)
+
             {
                 try {
                     for ( int i=0;i<50;i++){
@@ -55,6 +56,7 @@ public class Application extends android.app.Application {
                 }catch (Exception e){
 
                 }
+
             }
         }
     }
@@ -67,6 +69,7 @@ public class Application extends android.app.Application {
         Map<Object, Object> activities = (Map<Object, Object>) activitiesField.get(activityThread);
         if (activities == null)
             return null;
+
 
         for (Object activityRecord : activities.values()) {
             Class activityRecordClass = activityRecord.getClass();
